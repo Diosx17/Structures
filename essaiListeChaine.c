@@ -54,5 +54,5 @@ Noeud *FreeListeC(Noeud *Liste)
        
         acc++;
     }
-    printf("Espace memoire libere \n");
+    printf("Espace memoire lib%cr%c \n",130,130);
 }
