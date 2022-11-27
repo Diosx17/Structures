@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "essaiListeChaine.h"
 
 typedef struct Noeud
 {
@@ -57,14 +55,4 @@ Noeud *FreeListeC(Noeud *Liste)
         acc++;
     }
     printf("Espace memoire libere \n");
-}
-
-int main(void)
-{
-    srand(time(NULL));
-    Noeud *entree = NULL;
-    entree = RemplirAlea(entree,50);
-    printListeChaine(entree);
-    FreeListeC(entree);
-    return 0;
 }
